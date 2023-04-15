@@ -81,4 +81,6 @@ weighted avg       0.99      0.99      0.99      5475
 |---|---|
 | ![image](https://user-images.githubusercontent.com/31820707/232202923-ee412392-a9ab-407f-b09c-a8ea1737fb41.png) | ![image](https://user-images.githubusercontent.com/31820707/232202935-8e789f88-d0e7-48e6-b511-9a2d1c7d8c0e.png) | 
 
+## Model Predict
 
+I have developed a simple website so you can check out the model here: https://noobpk.github.io/Web-Vuln-Detection/
