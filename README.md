@@ -17,7 +17,7 @@ This is a detection method that using combine Convolutional Neural Network (CNN)
 
 This is a compact architectural model with two channels. For channel A, I using ```three layer``` include Conv1D - MaxPooling - LSTM. And for channel B, I using ```two layer``` LSTM. With extremely large data sets, the model can scale with ```multiple channels``` and ```multiple layers``` to be able to respond to the size of the dataset.
 
-![image](https://user-images.githubusercontent.com/31820707/232202832-d5bf67ec-4163-40df-94bb-aad69f905e1b.png)
+![image](https://user-images.githubusercontent.com/31820707/232204671-2010562e-9f42-4a73-b754-8a8b13141c7d.png)
 
 ## Datasets
 
