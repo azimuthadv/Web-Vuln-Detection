@@ -12,6 +12,7 @@ This is a detection method that using combine Convolutional Neural Network (CNN)
 - [x] SQL Injection
 - [ ] JSON & XML Injection
 - [ ] Path Traversal
+- [ ] Command Injection
 
 ## Model Architecture 
 
@@ -20,10 +21,12 @@ This is a compact architectural model with two channels. For channel A, I using 
 ![image](https://user-images.githubusercontent.com/31820707/232204671-2010562e-9f42-4a73-b754-8a8b13141c7d.png)
 
 ## Datasets
-
-[XSS Dataset](https://www.kaggle.com/datasets/syedsaqlainhussain/cross-site-scripting-xss-dataset-for-deep-learning)
-
-[SQL Injection Dataset](https://www.kaggle.com/datasets/syedsaqlainhussain/sql-injection-dataset)
+| Vuln Type | Sample | Access | 
+|---|---|---|
+| Cross-site scripting | 13686 | [Public](https://www.kaggle.com/datasets/syedsaqlainhussain/cross-site-scripting-xss-dataset-for-deep-learning) |
+| Sql Injection | 30919 | [Public](https://www.kaggle.com/datasets/syedsaqlainhussain/sql-injection-dataset) |
+| Normal | 31406 | [Public](https://github.com/das-lab/deep-xss/blob/master/dmzo_nomal.csv) |
+| Generate Dataset | 57060 | Private |
 
 ## Data Processing
 
