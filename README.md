@@ -228,6 +228,83 @@ weighted avg       0.99      0.99      0.99     11412
 |---|---|
 | ![image](https://user-images.githubusercontent.com/31820707/236611064-4daea2f7-bc0a-43a2-a0fb-7e7deec0a8e4.png) | ![image](https://user-images.githubusercontent.com/31820707/236611074-3778bf4a-06cf-4d49-be47-066edcd1ab28.png) | 
 
+## Model Retrain
+Scenario: Model with public dataset re-train with the private dataset
+
+```
+Fold 1
+Epoch 1/5
+286/286 [==============================] - 38s 111ms/step - loss: 0.1264 - accuracy: 0.9587 - val_loss: 0.0795 - val_accuracy: 0.9749
+Epoch 2/5
+286/286 [==============================] - 28s 97ms/step - loss: 0.0606 - accuracy: 0.9800 - val_loss: 0.0681 - val_accuracy: 0.9797
+Epoch 3/5
+286/286 [==============================] - 28s 97ms/step - loss: 0.0455 - accuracy: 0.9848 - val_loss: 0.0492 - val_accuracy: 0.9838
+Epoch 4/5
+286/286 [==============================] - 28s 96ms/step - loss: 0.0332 - accuracy: 0.9889 - val_loss: 0.0444 - val_accuracy: 0.9860
+Epoch 5/5
+286/286 [==============================] - 28s 96ms/step - loss: 0.0274 - accuracy: 0.9896 - val_loss: 0.0670 - val_accuracy: 0.9785
+Fold 2
+Epoch 1/5
+286/286 [==============================] - 39s 114ms/step - loss: 0.0290 - accuracy: 0.9897 - val_loss: 0.0232 - val_accuracy: 0.9898
+Epoch 2/5
+286/286 [==============================] - 28s 96ms/step - loss: 0.0235 - accuracy: 0.9910 - val_loss: 0.0238 - val_accuracy: 0.9899
+Epoch 3/5
+286/286 [==============================] - 27s 96ms/step - loss: 0.0213 - accuracy: 0.9910 - val_loss: 0.0298 - val_accuracy: 0.9881
+Epoch 4/5
+286/286 [==============================] - 28s 96ms/step - loss: 0.0204 - accuracy: 0.9923 - val_loss: 0.0286 - val_accuracy: 0.9880
+Fold 3
+Epoch 1/5
+286/286 [==============================] - 35s 102ms/step - loss: 0.0206 - accuracy: 0.9914 - val_loss: 0.0179 - val_accuracy: 0.9931
+Epoch 2/5
+286/286 [==============================] - 27s 96ms/step - loss: 0.0179 - accuracy: 0.9924 - val_loss: 0.0150 - val_accuracy: 0.9938
+Epoch 3/5
+286/286 [==============================] - 27s 96ms/step - loss: 0.0148 - accuracy: 0.9934 - val_loss: 0.0159 - val_accuracy: 0.9933
+Epoch 4/5
+286/286 [==============================] - 27s 96ms/step - loss: 0.0129 - accuracy: 0.9939 - val_loss: 0.0169 - val_accuracy: 0.9930
+Epoch 5/5
+286/286 [==============================] - 28s 96ms/step - loss: 0.0142 - accuracy: 0.9937 - val_loss: 0.0202 - val_accuracy: 0.9926
+Fold 4
+Epoch 1/5
+286/286 [==============================] - 38s 111ms/step - loss: 0.0139 - accuracy: 0.9938 - val_loss: 0.0113 - val_accuracy: 0.9938
+Epoch 2/5
+286/286 [==============================] - 30s 103ms/step - loss: 0.0126 - accuracy: 0.9937 - val_loss: 0.0123 - val_accuracy: 0.9944
+Epoch 3/5
+286/286 [==============================] - 30s 104ms/step - loss: 0.0141 - accuracy: 0.9935 - val_loss: 0.0138 - val_accuracy: 0.9939
+Epoch 4/5
+286/286 [==============================] - 28s 96ms/step - loss: 0.0110 - accuracy: 0.9945 - val_loss: 0.0152 - val_accuracy: 0.9928
+Fold 5
+Epoch 1/5
+286/286 [==============================] - 39s 110ms/step - loss: 0.0146 - accuracy: 0.9931 - val_loss: 0.0119 - val_accuracy: 0.9924
+Epoch 2/5
+286/286 [==============================] - 27s 96ms/step - loss: 0.0122 - accuracy: 0.9942 - val_loss: 0.0112 - val_accuracy: 0.9947
+Epoch 3/5
+286/286 [==============================] - 27s 96ms/step - loss: 0.0108 - accuracy: 0.9946 - val_loss: 0.0111 - val_accuracy: 0.9952
+Epoch 4/5
+286/286 [==============================] - 29s 103ms/step - loss: 0.0106 - accuracy: 0.9947 - val_loss: 0.0160 - val_accuracy: 0.9923
+Epoch 5/5
+286/286 [==============================] - 30s 105ms/step - loss: 0.0103 - accuracy: 0.9944 - val_loss: 0.0177 - val_accuracy: 0.9912
+Training score: 0.5046 +/- 0.4884
+Validation score: 0.5092 +/- 0.4797
+```
+
+```
+357/357 [==============================] - 12s 34ms/step - loss: 0.0365 - accuracy: 0.9883
+357/357 [==============================] - 13s 29ms/step
+Accuracy: 98.83%
+              precision    recall  f1-score   support
+
+           0       0.99      0.99      0.99      6487
+           1       0.98      0.99      0.99      4925
+
+    accuracy                           0.99     11412
+   macro avg       0.99      0.99      0.99     11412
+weighted avg       0.99      0.99      0.99     11412
+```
+
+| Chart Loss | Chart Accuracy  |
+|---|---|
+| ![image](https://user-images.githubusercontent.com/31820707/236615674-63636b0d-f21c-4049-800b-a82233cea925.png) | ![image](https://user-images.githubusercontent.com/31820707/236615684-4d395098-f7d2-4a76-b102-adc11128b9a3.png) | 
+
 ## Model Predict
 
 I have developed a simple website so you can check out the model here: https://noobpk.github.io/Web-Vuln-Detection/
